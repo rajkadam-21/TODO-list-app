@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #ff9999, #cc33ff);
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.todoapp__container {
+  width: 30%;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.todoapp__container .todoapp__container_header {
+  background-color: #f2f2f270;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.todoapp__container_main .todolist__container {
+  min-height: 200px;
+}
+
+.todoapp__container_main .todolist__container h3 {
+  padding: 20px;
+  text-align: center;
+}
+
+.todoapp__container_main .todolist__container ul li {
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f290;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.todoapp__container_main .todolist__container ul li:hover {
+  cursor: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="32" height="32"%3E%3Ctext y="20" font-size="20"%3E👆%3C/text%3E%3C/svg%3E'),
+    auto;
+}
+
+.no_todo {
+  color: #00000050;
+  padding: 30px;
+  display: block;
+  margin: auto;
+  text-align: center !important;
+}
+
+input {
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f270;
+  border-radius: 0 0 10px 10px;
+  outline: none;
+  font-size: 16px;
+  padding-bottom: 50px !important;
+}
+
+button {
+  background-color: #ffa64d;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  padding: 0 2px;
+  padding-top: 2px;
+  padding-left: 2px;
+  margin-top: -30px;
+}
+
+button img {
+  width: 50px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #ff9933;
+}
+
+.row {
+  border: none;
+  border-top: 1px solid #f2f2f2;
+}
+
+@media (max-width: 1000px) {
+  .todoapp__container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 750px) {
+  .todoapp__container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .todoapp__container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  .todoapp__container {
+    width: 80%;
+  }
+}

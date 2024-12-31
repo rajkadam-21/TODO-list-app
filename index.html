@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="todoapp__container">
+      <div class="todoapp__container_header">
+        <h3>Task App</h3>
+      </div>
+
+      <div class="todoapp__container_main">
+        <div class="todolist__container" id="div2">
+          <h3>Todo List</h3>
+          <p class="no_todo" id="no_todo">Hurrey! No Todo Task remain!</p>
+          <ul id="container" class="container1"></ul>
+        </div>
+
+        <div class="todolist__container" id="Done">
+          <hr class="row" />
+          <h3>Done Task</h3>
+          <ul id="container2" class="container1"></ul>
+        </div>
+
+        <input type="text" id="task" placeholder="Type todo task..." />
+      </div>
+    </div>
+    <div class="add_button">
+      <button id="add"><img src="plus.svg" alt="" /></button>
+    </div>
+
+  
+    <script src="scripte.js"></script>
+  </body>
+</html>
